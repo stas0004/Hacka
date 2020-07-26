@@ -1,2 +1,266 @@
-<html>
+<!doctype html>
+<html lang="en">
+
+<!--                     TECHNICAL INFORMATION                               -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Medical Forms</title>
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- <link rel="icon" sizes="192x192" href="images/android-desktop.png"> -->
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+  <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <link rel="stylesheet" href="indexp.css">
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
+  <style>
+  #view-source {
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    z-index: 900;
+  }
+  </style>
+</head>
+<!--                          END OF TECHNICAL INFORMATION                   -->
+
+<!--                          HOME PAGE TABS                                 -->
+<!--                          HOME PAGE TABS                                 -->
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header id = "backgroundimage" class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+      <div>
+        <h1 id= "hometitle"> Medical Forms </h1>
+      </div>
+      <div id = "HomePageTabs" class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+        <a href="#Home" class="mdl-layout__tab is-active">Home</a>
+      </div>
+    </header>
+
+
+<!--                          END OF HOME PAGE TABS                          -->
+
+
+<!--                        Patient information                           -->
+
+<h5> HEALTH SERVICE DENTAL CLINIC - PERSONAL INFORMATION</h5>
+
+<!--                          Name                                           -->
+<form action="/action_page.php">
+  <label for="fname">PATIENT NAME:</label>
+  <input type="text" id="fname" name="fname" ><br><br>
+
+</form>
+
+<!--                        Date of Birth                             -->
+
+<!--<h1>Bold Headings</h1>-->
+
+<!--   <p> Headings</p> -->
+
+<form action="/action_page.php">
+
+  <label for="date"> DATE OF BIRTH:</label>
+  <input type="date" id="datemin" name="datemin"><br><br>
+</form>
+
+<!--              Address                                       -->
+
+<form action="/action_page.php">
+
+  <label for="address"> ADDRESS</label>
+  <input type="text" id="address" name="address" ><br><br>
+</form>
+
+
+
+<form action="/action_page.php">
+
+  <label for="address"> SUBURB/TOWN </label>
+  <input type="text" id="suburb" name="suburb" >
+  <label for="address"> POSTCODE </label>
+  <input type="text" id="postcode" name="postcode" ><br><br>
+</form>
+
+
+
+
+<form action="/action_page.php">
+
+  <label for="address"> HOME PHONE </label>
+  <input type="text" id="homephone" name="homephone" >
+  <label for="address"> MOBILE </label>
+  <input type="text" id="mobile" name="mobile" ><br><br>
+</form>
+
+
+<form action="/action_page.php">
+
+  <label for="address"> WORK PHONE </label>
+  <input type="number" id="workphone" name="workphone">
+  <label for="address"> EMAIL (optional)</label>
+  <input type="text" id="email" name="email"><br><br>
+</form>
+
+
+
+<!-- End of PERSONALinformation -->
+
+<!-- OTHER CONTACR DETAILS      -->
+
+<h5> GUARDIANS AND OTHER CONTACT DETAILS</h5>
+
+<!-- GUARDIANS name                           -->
+
+<form action="/action_page.php">
+
+  <label for="address"> If child, please state FATHER / MOTHER / GUARDIAN'S NAME </label>
+  <input type="text" id="guardianame" name="guardianame" ><br><br>
+</form>
+
+
+<!-- CARER NAME AND PHONE NUMBER                -->
+
+<form action="/action_page.php">
+  <label for="address"> If relevant, CARER NAME     </label>
+  <input type="text" id="carername" name="carername" >
+  <label for="address"> PHONE  </label>
+  <input type="number" id="carerphone" name="phonename" ><br><br>
+
+</form>
+
+
+<!-- EMERGENCY CONTACT NUMBER -->
+
+<form action="/action_page.php">
+  <label for="address"> EMERGENCY CONTACT NAME  </label>
+  <input type="text" id="emergency" name="emergency" ><br><br>
+
+</form>
+
+<!-- PHONE AND MOBILE -->
+
+<form action="/action_page.php">
+
+  <label for="address">PHONE  </label>
+  <input type="number" id="emergencyphone" name="emergencyphone" >
+  <label for="address">MOBILE  </label>
+  <input type="number" id="emergencymobile" name="mergencymobile" ><br><br>
+
+</form>
+
+
+<!-- OTHER DETAILS                   -->
+
+<h5> GUARDIANS AND OTHER CONTACT DETAILS</h5>
+
+<form action="/action_page.php">
+
+  <label for="address">WHO IS RESPOSIBLE FOR THIS ACCOUNT? </label>
+  <input type="text" id="emergencyphone" name="emergencyphone" >
+  <label for="address">MOBILE  </label>
+  <input type="" id="emergencymobile" name="mergencymobile" ><br><br>
+
+</form>
+
+
+
+<form action="/action_page.php">
+
+  <label for="address"> DO YOU HAVE PRIVATE HEALTH INSURANCE? </label>
+  <input type="checkbox" id="healthinsurance" name="healthinsurance">
+  <label for="yes"> YES </label>
+  <input type="checkbox" id="yes" name="yes">
+  <label for="no"> NO </label>
+  <input type="checkbox" id="no" name="no">
+  <label for="address"> FUND? </label>
+  <input type="" id="fund" name="fund"><br><br>
+
+</form>
+
+
+<form action="/action_page.php">
+  <label for="address"> IS THIS CONSULTATION RELATED TO Workcover, work related injury or transport accident? </label>
+  <input type="checkbox" id="workcover" name="workcover">
+  <label for="yes"> YES </label>
+  <input type="checkbox" id="yes2" name="yes">
+  <label for="no"> NO </label>
+  <input type="checkbox" id="no2" name="no"> <br><br>
+  <label for="Country"> Country of Origin? </label>
+  <input type="text" id="country" name="country">
+  <label for="address">OCCUPATION </label>
+  <input type="text" id="text" name="workcover"> <br><br>
+  <label for="address"> Are you cultural background other than Australia? </label>
+  <input type="text" id="cultural" name="cultural">
+
+</form>
+
+
+<!-- HOW DID YOU HEAR ABOUT US? -->
+
+<h5> HOW DO YOU HEAR ABOUT US? </h5>
+
+<form action="/action_page.php">
+
+  <label for="address">FAMILY? </label>
+  <input type="text" id="family" name="family" >
+  <label for="address">Personal Recommendation?</label>
+  <input type="text" id="personalrecom" name="personalrecom"><br><br>
+  <input type="checkbox" id="signage" name="signage" >
+  <label for="address">Signage </label>
+  <input type="checkbox" id="yellowpages" name="yellowpages" >
+  <label for="address">Yellow Pages </label>
+  <input type="checkbox" id="internet" name="internet" >
+  <label for="address">Web/Internet </label>
+  <input type="checkbox" id="other" name="other" >
+  <label for="address">Other </label> <br><br>
+  <label for="address">Are there other immediate family members who attend this clinic? If so,who?  </label>
+  <input type="text" id="family" name="family" >
+
+
+</form>
+
+
+
+
+<!--                         SUBMIT BUTTON               -->
+
+
+<!--  <input type="submit" value="Submit"> -->
+   <button type="submit" value="Submit">Submit</button>
+
+
+   <!--            LINK TO JS              -->
+
+  <script type="text/javascript" src='.js'></script>
+
+</body>
 </html>
